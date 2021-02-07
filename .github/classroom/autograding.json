@@ -26,7 +26,7 @@
       "run": "mvn -q exec:java -Dexec.mainClass=\"hu.meiit.haladojava.calculator.App\"",
       "input": "aa",
       "output": "-",
-      "comparison": "included",
+      "comparison": "exact",
       "timeout": 10,
       "points": 10
     }
