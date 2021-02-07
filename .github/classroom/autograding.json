@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "build",
+      "setup": "",
+      "run": "mvn package",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "osszeadas",
+      "setup": "",
+      "run": "mvn -q exec:java -Dexec.mainClass=\"hu.meiit.haladojava.calculator.App\"",
+      "input": "3 + 4",
+      "output": "7.0",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "invalid input",
+      "setup": "",
+      "run": "mvn -q exec:java -Dexec.mainClass=\"hu.meiit.haladojava.calculator.App\"",
+      "input": "aa",
+      "output": "-",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}
